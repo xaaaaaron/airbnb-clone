@@ -19,3 +19,5 @@ export const LargeCards = ({img, title, description, buttonText}) => {
       
     )
 }
+
+export default LargeCards
