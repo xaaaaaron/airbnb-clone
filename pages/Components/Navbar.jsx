@@ -17,8 +17,7 @@ const Navbar = () => {
     const router = useRouter();
 
     const handleSelect = (ranges) => {
-        console.log(ranges)
-        setStartDate(ranges.selection.startDate)
+        setStartDate(ranges.selection.newstartDate)
         setEndDate(ranges.selection.endDate)
     }
 
@@ -37,8 +36,6 @@ const Navbar = () => {
             pathname: '/search',
             query: {
                 location: searchInput,
-                startDate: startDate.toISOString(),
-                endDate: endDate.toISOString(),
                 noOfGuests
             }
         })
