@@ -8,6 +8,7 @@ const Banner = () => {
            
             <Image
             src={image}
+            alt="test"
             layout="fill"
             objectFit="cover"
             />

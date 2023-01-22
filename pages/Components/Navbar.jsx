@@ -12,6 +12,7 @@ const Navbar = () => {
         {/* */}
         <div className="relative flex items-center h-12 cursor-pointer my-auto">
             <Image
+                alt="test"
                 src={logo}
                 layout="fill"
                 objectFit="contain"

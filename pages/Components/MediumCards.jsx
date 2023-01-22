@@ -8,6 +8,7 @@ export const MediumCards = ({img, title}) => {
            <div className="relative h-80 w-80">
                <Image
                className="rounded-xl"
+               alt="test"
                src={img}
                layout="fill"
                />
