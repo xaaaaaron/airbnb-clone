@@ -1,7 +1,7 @@
 import React, {useEffect, useState } from 'react'
 import Image from 'next/image'
 import { MagnifyingGlassIcon, GlobeAltIcon, Bars3Icon } from '@heroicons/react/24/outline'
-import { UserCircleIcon } from '@heroicons/react/24/solid'
+import { UserCircleIcon, UsersIcon } from '@heroicons/react/24/solid'
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
@@ -72,7 +72,15 @@ const Navbar = () => {
                 ranges={[selectionRange]}
                 minDate={new Date()}
                 rangeColors={["#FD5B61"]}
-                onChange={handleSelect} />
+                onChange={handleSelect}
+                />
+                <div className="flex items-center border-b mb-4">
+                    <h2 className="text-2xl pl-2 flex-grow">
+                        Number of Guests
+                    </h2>
+                    <UsersIcon className="h-5" />
+                    <input className="w-12 pl-2 text-lg outline-none text-red-400" type="number" />
+                </div>
             </div>
         )}
 
