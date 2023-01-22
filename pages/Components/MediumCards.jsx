@@ -19,3 +19,5 @@ export const MediumCards = ({img, title}) => {
        </div>
     )
 }
+
+export default MediumCards;
