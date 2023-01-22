@@ -23,8 +23,8 @@ const Navbar = () => {
     }
 
     const selectionRange = {
-        startDate: startDate,
-        endDate: endDate,
+        startDate: new Date(startDate),
+        endDate: new Date(endDate),
         key: 'selection'
     }
 
