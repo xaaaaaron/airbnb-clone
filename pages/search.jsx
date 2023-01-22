@@ -6,9 +6,7 @@ import { format } from "date-fns"
 const Search = () => {
     const router = useRouter();
     const {location, noOfGuests} = router.query
-    const formattedStartDate = format(new Date(startDate), "dd MMMM yy")
-    const formattedEndDate = format(new Date(endDate), "dd MMMM yy")
-   
+ 
     return (
         <div className="h-screen">
             <Navbar />
