@@ -7,6 +7,8 @@ import Banner from './Components/Banner'
 import { SmallCard } from './Components/SmallCard'
 import { MediumCards } from './Components/MediumCards'
 import { LargeCards } from './Components/LargeCards'
+import { Bottom } from './Components/Bottom'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +21,7 @@ export default function Home({ exploreData, cardsData }) {
       </Head>
       <Navbar />
       <Banner />
+   
 
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-6">
@@ -54,6 +57,8 @@ export default function Home({ exploreData, cardsData }) {
           buttonText="Get inspired" />
         </section>
       </main>
+      
+      <Bottom />
     </>
   )
 }

@@ -75,11 +75,13 @@ const Navbar = () => {
 
         {/* Right */}
         <div className="flex items-center space-x-4 justify-end text-gray-600">
-            <p className="hidden md:inline">Airbnb your home</p>
-            <GlobeAltIcon className="hidden h-6 md:inline" />
-            <div className="flex items-center space-x-2 border-2 p-2 rounded-full cursor-pointer">
+            <div className="flex items-center space-x-2 p-2 rounded-full cursor-pointer hover:bg-gray-100 hover:shadow-md">
+                <p className="hidden md:inline">Airbnb your home</p>
+            </div>
+            <GlobeAltIcon className="hidden h-6 md:inline hover:shadow-md cursor-pointer space-x-2 rounded-full" />
+            <div className="flex items-center space-x-2 border-2 p-2 rounded-full cursor-pointer hover:shadow-md">
                 <Bars3Icon className="h-6"/>
-                <UserCircleIcon className="h-6"/>
+                <UserCircleIcon className="h-6 "/>
             </div>
         </div>
 
