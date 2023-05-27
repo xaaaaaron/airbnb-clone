@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 const Banner = () => {
-    const image = "https://rare-gallery.com/uploads/posts/344549-Beautiful-Mountain-Nature-Colorful-Scenery-Minimalist-Digital-Art.jpg"
+    const image = require('../../assets/bg.png')
     return (
         <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2lx:h-[1080px]">
            
